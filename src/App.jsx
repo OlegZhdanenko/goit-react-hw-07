@@ -1,0 +1,20 @@
+
+import ContactList from "./components/ContactList/ContactList.jsx"
+import './App.css'
+import ContactForm from './components/ContactForm/ContactForm'
+import SearchBox from "./components/SearchBox/SearchBox.jsx"
+import css from "../src/app.module.css"
+
+
+function App() {
+  return (
+    <div className={css.container}>
+      <h1>Phonebook</h1>
+      <ContactForm />
+      <SearchBox />
+      <ContactList />
+    </div>
+  );
+}
+
+export default App
